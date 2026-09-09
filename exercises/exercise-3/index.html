@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>exercise-3</title> 
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    /> 
+    <style> 
+    body { 
+        margin: 0%; 
+        background-color: rgb(119, 119, 119); 
+        font-family: 'Courier New', Courier, monospace; 
+    } 
+    main{
+        background-color: #fff; 
+    }
+    .row{
+        display: flex;
+    }
+    .row > div{
+        min-height: 100px;
+        border: 1px dotted black;
+    }
+    #site-header { 
+        width: 1440px; 
+        margin: 20px auto; 
+        text-align: center; 
+        align-items: center; 
+        justify-content: center;
+    } 
+    #content{
+        max-width: 1440px;
+    }
+    .col-50{
+        width: 50%;
+    } 
+    .col-a { 
+        flex: 1;
+    } 
+    .col-b{ 
+        width: 200px;
+    } 
+    .col-33 { 
+        width: 33.333%;
+    } 
+    .col-100 { 
+        width: 100%;
+    }
+    #footer { 
+        width: 1440px; 
+        text-align: center; 
+        align-items: center; 
+        margin: auto; 
+    } 
+    </style> 
+
+</head>
+<body> 
+     <header> id="site-header"</header>
+     <div class="row">
+        <div class="col-100">
+            header: col-100<br />This entire Layout is 1440px wide
+        </div>
+     </div> 
+    </header> 
+    <main>
+        <div id="content">
+            <div class="row">
+                <div class="col-a">col-a</div>
+                <div class="col-b">col-b<br />(width 200px)</div>
+            </div>
+
+            <div class="row">
+                <div class="col-50">col-50</div>
+                <div class="col-50">col-50</div>
+            </div>
+            <div class="row">
+                <div class="col-33">col-33</div>
+                <div class="col-33">col-33</div>
+                <div class="col-33">col-33</div>
+            </div>
+        </div> 
+
+        <footer>
+            <div class="row">
+                <div class="col-100">footer: col-100</div>
+            </div>
+        </footer>
+    </main>
+  </body>
+</html>
