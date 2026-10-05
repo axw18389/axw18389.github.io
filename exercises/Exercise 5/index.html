@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<style>  
+body {
+        margin: 0;
+        padding: 0; 
+        background-color:azure
+      } 
+      img{ 
+        max-width: 100%; 
+        height: auto;
+      } 
+      main {
+        padding: 1em;
+      }
+      #toggle-nav-btn {
+        display: none;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+      }
+      #primary-nav {
+        background-color: lightblue;
+      }
+      #primary-nav ul {
+        padding-left: 0;
+      }
+      #primary-nav li {
+        list-style: none;
+        display: inline-block;
+      }
+      #primary-nav a {
+        background-color: cornflowerblue;
+        display: block;
+        padding: 1em;
+      } 
+      nav a:hover { 
+        color: blueviolet; 
+        front-weight: bold 
+        transition color 00.5s ease; 
+       }
+      @media (max-width: 767px) {
+        #primary-nav {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        #primary-nav li {
+          display: block;
+        }
+        body.nav-open #primary-nav {
+          grid-template-rows: 1fr;
+        }
+        .inner {
+          overflow: hidden;
+        }
+        #toggle-nav-btn {
+          display: block; /* display button beneath breakpoint */
+        }
+      }
+
+
+
+     img { 
+     display: flex; 
+     justify-content: center; 
+     align-items: center;
+     } 
+
+     p { 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     }
+
+
+
+
+</style>
+ 
+<body> 
+  <header>
+    <button id="toggle-nav-btn" aria-expanded="false" aria-label="menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav">
+      <div class="inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="fish.html">Fish</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav> 
+  </header>
+    <div> <img src="https://cdn.stocksnap.io/img-thumbs/960w/nature-landscape_GZFVXTHQLU.jpg" alt="Icey"></div> 
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, soluta, beatae officiis illo mollitia voluptas 
+        voluptate illum quis veritatis et harum sequi tenetur minus corrupti maiores perferendis nulla amet esse. 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero possimus nisi non sit enim dolores 
+    corporis eius pariatur? Maxime iste fugit sunt earum nostrum consectetur amet possimus ratione est deserunt!
+    </p>
+</body> 
+<script> 
+
+      window.onload = () => {
+       
+        const toggleNavBtn = document.getElementById("toggle-nav-btn");
+        toggleNavBtn.innerHTML = "&#9776;";
+
+        
+        toggleNavBtn.addEventListener("click", () => {
+        
+          document.body.classList.toggle("nav-open");
+          toggleNavBtn.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "&#9776;";
+        });
+      };
+</script>
+</html>
