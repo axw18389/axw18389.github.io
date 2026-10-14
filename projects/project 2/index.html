@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+  <header>
+    <button id="toggle-nav-btn" aria-expanded="false" aria-label="menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav">
+      <div class="inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Tools</a></li>
+          <li><a href="">Tutorials</a></li>
+        </ul>
+      </div>
+    </nav> 
+  </header> 
+   <div>
+            <div class="feature">
+            <div class="feature-image">
+           <img src="" alt="Drawing Competition" />
+           </div>
+            <div class="feature-description">
+            <h1>Drawing Competition</h1>
+             <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit obcaecati error accusamus delectus nisi praesentium facilis dicta neque. Amet quae deserunt debitis illum vitae est facilis eaque, quas laborum explicabo.
+            </p> 
+              <a href="google.com"> 
+                <button type="custom-button">Visit</button>
+              </a>
+           </div>
+          </div>
+
+            <div class="feature-image">
+           <img src="" alt="Tools" />
+           </div>
+            <div class="feature-description">
+            <h1>Tools Needed</h1>
+             <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis corporis minima neque nihil ea necessitatibus id molestias molestiae assumenda tempore. Officia odio quae eligendi dolor iusto quas blanditiis ipsum harum.  
+            </p> 
+                <a href="google.com"> 
+                <button type="custom-button">Visit</button>
+                </a>
+           </div>
+          </div> 
+
+            <div class="feature">
+            <div class="feature-image">
+            <img src="" alt="Tutorials" />
+            </div>
+            <div class="feature-description">
+            <h1>Tutorials to follow</h1>
+             <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsam facilis possimus molestiae porro optio, aliquam tempore similique debitis quasi natus quibusdam, illo quo? Eius nemo quis eos a labore?
+            </p> 
+                <a href="google.com"> 
+                <button type="custom-button">Visit</button>
+                </a>
+           </div>
+          </div>
+           </Div>
+         
+    </div> 
+</body> 
+<script> 
+
+      window.onload = () => {
+       
+        const toggleNavBtn = document.getElementById("toggle-nav-btn");
+        toggleNavBtn.innerHTML = "&#9776;";
+
+        
+        toggleNavBtn.addEventListener("click", () => {
+        
+          document.body.classList.toggle("nav-open");
+          toggleNavBtn.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "&#9776;";
+        });
+      };
+</script>
+</html>
