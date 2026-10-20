@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1</title> 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+  <header>
+    <button id="toggle-nav-btn" aria-expanded="false" aria-label="menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav">
+      <div class="inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Tools</a></li>
+          <li><a href="step_1.html">Tutorials</a></li>
+        </ul>
+      </div>
+    </nav> 
+  </header> 
+  <div id="hero">
+        <h1 style="text-align: center;">Drawing Arms</h1>  
+        </div>
+
+    <section class="step-section"> 
+     <img src="images/arms_step1.png" alt="sketch_arms" width="400" height="300"/>
+     <h2>Basic shapes</h2> 
+     <p> to start drawing your body parts you will want to start out drawing a straight line. Then you would want to to add 
+        three circles, one at the bottom, one in the middle and one at the end. On the circle at the end draw a hexagon to rpresent your hand.
+
+    </p>
+
+     <a href="index.html" class="nav-btn"> Home</a> 
+     <a href="step_2.html" class="nav-btn"> Next</a> 
+    </section>
+ 
+
+</body> 
+<script> 
+
+      window.onload = () => {
+       
+        const toggleNavBtn = document.getElementById("toggle-nav-btn");
+        toggleNavBtn.innerHTML = "&#9776;";
+
+        
+        toggleNavBtn.addEventListener("click", () => {
+        
+          document.body.classList.toggle("nav-open");
+          toggleNavBtn.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "&#9776;";
+        });
+      };
+</script>
+</html>

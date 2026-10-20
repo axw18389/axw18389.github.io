@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 2</title> 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+  <header>
+    <button id="toggle-nav-btn" aria-expanded="false" aria-label="menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav">
+      <div class="inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Tools</a></li>
+          <li><a href="step_1.html">Tutorials</a></li>
+        </ul>
+      </div>
+    </nav> 
+  </header> 
+  <div id="hero">
+        <h1 style="text-align: center;">Drawing Arms</h1>  
+        </div>
+
+    <section class="step-section"> 
+     <img src="images/arms_step2.png" alt="sketch_arms" width="400" height="300"/>
+     <h2>Connect the dots</h2> 
+     <p> Once you got the basic layout done, you will then want to draw large ovals connect from one dot to the next.
+        But when you get to the last dot, turn the hexagon into the shape of a hand with a almost, triangle shape at the 
+        top. This will then give you a rough idea of what kind of shape you need to get done and help with the next step. 
+    </p>
+
+     <a href="step_1.html" class="nav-btn"> Previous</a> 
+     <a href="step_3.html" class="nav-btn"> Next</a> 
+    </section>
+ 
+
+</body> 
+<script> 
+
+      window.onload = () => {
+       
+        const toggleNavBtn = document.getElementById("toggle-nav-btn");
+        toggleNavBtn.innerHTML = "&#9776;";
+
+        
+        toggleNavBtn.addEventListener("click", () => {
+        
+          document.body.classList.toggle("nav-open");
+          toggleNavBtn.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "&#9776;";
+        });
+      };
+</script>
+</html>

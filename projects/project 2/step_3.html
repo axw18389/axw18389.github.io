@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 3</title> 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+  <header>
+    <button id="toggle-nav-btn" aria-expanded="false" aria-label="menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav">
+      <div class="inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Tools</a></li>
+          <li><a href="step_1.html">Tutorials</a></li>
+        </ul>
+      </div>
+    </nav> 
+  </header> 
+  <div id="hero">
+        <h1 style="text-align: center;">Drawing Arms</h1>  
+        </div>
+
+    <section class="step-section"> 
+     <img src="images/arms_step3.png" alt="sketch_arms" width="400" height="300"/>
+     <h2>Adding the details</h2> 
+     <p> Once you got the shapes laid out you are then going to want to draw the finer details over them. Don't get too detailed, like
+        adding all the muscle and shadow. Nut add things like the fingers, wrist, and shape of the arms. This will help with the 
+        final step especially. 
+    </p>
+
+     <a href="step_2.html" class="nav-btn"> Previous</a> 
+     <a href="step_4.html" class="nav-btn"> Next</a> 
+    </section>
+ 
+
+</body> 
+<script> 
+
+      window.onload = () => {
+       
+        const toggleNavBtn = document.getElementById("toggle-nav-btn");
+        toggleNavBtn.innerHTML = "&#9776;";
+
+        
+        toggleNavBtn.addEventListener("click", () => {
+        
+          document.body.classList.toggle("nav-open");
+          toggleNavBtn.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "&#9776;";
+        });
+      };
+</script>
+</html>

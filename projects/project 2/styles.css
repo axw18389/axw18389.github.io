@@ -6,6 +6,7 @@ body {
       img{ 
         max-width: 100%; 
         height: auto;
+        align-content: center;
       } 
       main {
         padding: 1em;
@@ -56,25 +57,53 @@ body {
           display: block; /* display button beneath breakpoint */
         }
       }
-
-
-
      img { 
      display: flex; 
      justify-content: center; 
      align-items: center;
      } 
+     
      h1{ 
-        text-align: center;
-        font-size: 60px;
-        position: center; 
-        height: 50px; 
-        padding-top: 100px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 60px;
+      position: center; 
+      margin-bottom: 60px;
      } 
-     section{ 
+     
+     .centered-stack{ 
+      display: flex;
       align-content: center; 
-      background-color: #94AFA7;
-     }
+      flex-direction: column;
+      text-align: center; 
+      padding: 40px;
+      align-items: center;
+      background-color: #94AFA7; 
+      margin-bottom: 50px;
+     } 
+
+     .centered-stack img{ 
+      max-width: 100%; 
+      height: auto;
+     } 
+
+     .step-section{ 
+      display: flex; 
+      flex-direction: column;
+      text-align: center; 
+      padding: 40px;
+      align-items: center;
+      background-color: #94AFA7; 
+      margin-bottom: 50px;
+     } 
+
+     .nav-btn { 
+      display: flex;
+      justify-content: center; 
+      gap: 16px;               
+      width: 100%; 
+    }
 
 
 
