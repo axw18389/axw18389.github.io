@@ -60,7 +60,7 @@ body {
 
      #Header { 
       height: 600px;
-        background-image: url("https://picsum.photos/2000/400");
+        background-image: url(images/Title\ Image.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -80,11 +80,31 @@ body {
 
       #Introduction{ 
       display: flex;           
-      gap: 10px;               
+      gap: 30px;               
       justify-content: center;
       flex-wrap: wrap;
+     } 
+
+     .container { 
+       display: flex;
+      gap: 10px;
+     } 
+
+     #Menu{ 
+     flex: 1;                
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+     } 
+     
+     #Events { 
+    flex: 1;                
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
      }
      
+
      h1{ 
       flex-wrap: wrap;
       justify-content: space-between;
