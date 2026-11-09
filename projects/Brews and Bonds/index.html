@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brews and Bonds</title> 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+  <header>
+    <button id="toggle-nav-btn" aria-expanded="false" aria-label="menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav">
+      <div class="inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Events</a></li> 
+          <li><a href="">About Us</a></li> 
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav> 
+  </header> 
+  <div id="Header"> 
+    <div id="Header-Content"> 
+      <h1 style=>Join our Table</h1>
+    </div>
+   </div> 
+
+   <div id="Introduction"> 
+    <img src="" alt=""> 
+    <p>We here at Brews and Bonds are focused on giving our customers quality coffee and good food. 
+      Enjoy a welcoming morning and converse with everyone around the table.</p>
+   </div> 
+
+    <div id="Menu Items"> 
+      <div id="Drinks">
+       <img src="" alt=""> 
+       <p></p>
+      </div>
+      <div id="Specials">
+       <img src="" alt=""> 
+       <p></p>
+      </div>
+   </div> 
+
+    <div id="Events"> 
+    <img src="" alt=""> 
+    <p>See what events you can plan at our shop and what time and day you can attend them. 
+      You can learn more below</p>
+   </div>
+
+
+
+ 
+
+</body> 
+<script> 
+
+      window.onload = () => {
+       
+        const toggleNavBtn = document.getElementById("toggle-nav-btn");
+        toggleNavBtn.innerHTML = "&#9776;";
+
+        
+        toggleNavBtn.addEventListener("click", () => {
+        
+          document.body.classList.toggle("nav-open");
+          toggleNavBtn.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "&#9776;";
+        });
+      };
+</script>
+</html>

@@ -1,0 +1,120 @@
+body {
+        margin: 0;
+        padding: 0; 
+        background-color:blanchedalmond
+      } 
+
+      main {
+        padding: 1em;
+      }
+      #toggle-nav-btn {
+        display: none;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+      }
+      #primary-nav { 
+        text-align: center;
+        background-color: #DAA785; 
+      }
+      #primary-nav ul {
+        padding-left: 0;
+      }
+      #primary-nav li {
+        list-style: none;
+        display: inline-block; 
+      }
+      #primary-nav a {
+        background-color: #DAA785;
+        display: block;
+        padding: 1em;
+      } 
+      nav a:hover {  
+        front-weight: bold 
+        transition color 00.5s ease; 
+       }
+      @media (max-width: 767px) {
+        #primary-nav {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        #primary-nav li {
+          display: block;
+        }
+        body.nav-open #primary-nav {
+          grid-template-rows: 1fr;
+        }
+        .inner {
+          overflow: hidden;
+        }
+        #toggle-nav-btn {
+          display: block; /* display button beneath breakpoint */
+        }
+      }
+     img { 
+     display: flex; 
+     justify-content: center; 
+     align-items: center;
+     } 
+
+     #Header { 
+      height: 600px;
+        background-image: url("https://picsum.photos/2000/400");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+     } 
+
+     #Header-Content{ 
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        width: 50%;
+        min-width: 400px;
+        padding: 20px;
+        margin: 0 auto;
+      } 
+
+      #Introduction{ 
+      display: flex;           
+      gap: 10px;               
+      justify-content: center;
+      flex-wrap: wrap;
+     }
+     
+     h1{ 
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 60px;
+      position: center; 
+      margin-bottom: 60px;
+     } 
+
+     .step-section{ 
+      display: flex; 
+      flex-direction: column;
+      text-align: center; 
+      padding: 40px;
+      align-items: center;
+      background-color: #94AFA7; 
+      margin-bottom: 50px;
+     } 
+
+     .nav-btn { 
+      display: flex;
+      justify-content: center; 
+      gap: 16px;               
+      width: 100%; 
+    }
+
+
+
+     p { 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     }
