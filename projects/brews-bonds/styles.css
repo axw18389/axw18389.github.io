@@ -1,21 +1,20 @@
 body {
         margin: 0;
         padding: 0; 
-        background-color:blanchedalmond
+        background-color:blanchedalmond 
       } 
 
-      main {
-        padding: 1em;
-      }
       #toggle-nav-btn {
         display: none;
         position: absolute;
         right: 1em;
         top: 1em;
-      }
+      } 
+
       #primary-nav { 
-        text-align: center;
+        display: flex;
         background-color: #DAA785; 
+        justify-content: space-between;
       }
       #primary-nav ul {
         padding-left: 0;
@@ -49,13 +48,14 @@ body {
           overflow: hidden;
         }
         #toggle-nav-btn {
-          display: block; /* display button beneath breakpoint */
+          display: block; 
         }
       }
      img { 
-     display: flex; 
-     justify-content: center; 
-     align-items: center;
+     display: block; 
+     margin-left: auto;
+     margin-right: auto;
+
      } 
 
      #Header { 
@@ -75,33 +75,38 @@ body {
         width: 50%;
         min-width: 400px;
         padding: 20px;
-        margin: 0 auto;
+        margin: 0 auto; 
+        border: none;              
+        padding: 12px 24px;        
+        border-radius: 8px;        
+        cursor: pointer; 
       } 
 
       #Introduction{ 
       display: flex;           
-      gap: 30px;               
-      justify-content: center;
+      gap: 10px;  
+      align-content: center;             
       flex-wrap: wrap;
      } 
 
      .container { 
-       display: flex;
-      gap: 10px;
+      display: flex; 
+      flex-wrap: wrap;
+      justify-content: center; 
+      align-items: center;
+      gap: 16px;
      } 
 
      #Menu{ 
      flex: 1;                
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #333;
+     padding: 20px;
+     text-align: center;
      } 
      
      #Events { 
     flex: 1;                
     padding: 20px;
     text-align: center;
-    border: 1px solid #333;
      }
      
 
@@ -109,32 +114,63 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
       text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 60px;
       position: center; 
       margin-bottom: 60px;
      } 
 
-     .step-section{ 
-      display: flex; 
-      flex-direction: column;
-      text-align: center; 
-      padding: 40px;
-      align-items: center;
-      background-color: #94AFA7; 
-      margin-bottom: 50px;
-     } 
 
      .nav-btn { 
       display: flex;
       justify-content: center; 
       gap: 16px;               
       width: 100%; 
+    } 
+
+    .Menu-Btn{ 
+      background-color: #EF8C57; 
+      color: white;              
+      border: none;              
+      padding: 12px 24px;        
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;        
+      cursor: pointer;           
+      transition: 0.2s ease, 0.1s ease;
     }
+    
+    .Menu-btn:hover {
+      background-color: #ff5900; 
+    }
+    
+    .Menu-btn:active {
+      transform: scale(0.98);
+    } 
 
-
+    .Events-Btn{ 
+      background-color: #EF8C57; 
+      color: white;              
+      border: none;              
+      padding: 12px 24px;        
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;        
+      cursor: pointer;           
+      transition: 0.2s ease, 0.1s ease;
+    }
+    
+    .Events-btn:hover {
+      background-color: #ff5900; 
+    }
+    
+    .Events-btn:active {
+      transform: scale(0.98);
+    } 
 
      p { 
      display: flex; 
      justify-content: center; 
      align-items: center; 
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
      }
