@@ -1,0 +1,147 @@
+body {
+        margin: 0;
+        padding: 0; 
+        background-color:blanchedalmond 
+      } 
+
+      #toggle-nav-btn {
+        display: none;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+      } 
+
+      #primary-nav { 
+        display: flex;
+        background-color: #DAA785; 
+        justify-content: space-between;
+      }
+      #primary-nav ul {
+        padding-left: 0;
+      }
+      #primary-nav li {
+        list-style: none;
+        display: inline-block; 
+      }
+      #primary-nav a {
+        background-color: #DAA785;
+        display: block;
+        padding: 1em;
+      } 
+      nav a:hover {  
+        front-weight: bold 
+        transition color 00.5s ease; 
+       } 
+
+       .header-container{ 
+        max-width: 1440px;
+        margin: 0 auto;
+       }
+      @media (max-width: 767px) {
+        #primary-nav {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        #primary-nav li {
+          display: block;
+        }
+        body.nav-open #primary-nav {
+          grid-template-rows: 1fr;
+        }
+        .inner {
+          overflow: hidden;
+        }
+        #toggle-nav-btn {
+          display: block; 
+        }
+      }
+     img { 
+     display: block; 
+     margin-left: auto;
+     margin-right: auto;
+
+     } 
+
+     #Header { 
+      height: 600px;
+        background-image: url(images/Coffee\ and\ food.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+     } 
+
+     #Header-Content{ 
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        width: 50%;
+        min-width: 400px;
+        padding: 20px;
+        margin: 0 auto; 
+        border: none;              
+        padding: 12px 24px;        
+        border-radius: 8px;        
+        cursor: pointer; 
+      } 
+
+      #Introduction{ 
+      display: flex;           
+      gap: 10px;  
+      align-content: center;             
+      flex-wrap: wrap;
+     } 
+
+     .container { 
+       display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      max-width: 800px;
+      margin: auto;
+     } 
+
+        .text-content {
+     flex: 1; 
+     }
+
+
+     #Menu{ 
+     flex: 1;                
+     padding: 20px;
+     text-align: center;
+     } 
+     
+     #Events { 
+    flex: 1;                
+    padding: 20px;
+    text-align: center;
+     }
+     
+
+     h1{ 
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 60px;
+      position: center; 
+      margin-bottom: 60px;
+     } 
+
+
+     .nav-btn { 
+      display: flex;
+      justify-content: center; 
+      gap: 16px;               
+      width: 100%; 
+    } 
+
+     p { 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+     }

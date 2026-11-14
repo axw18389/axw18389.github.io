@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brews and Bonds</title> 
+    <link rel="stylesheet" href="styles2.css" />
+</head>
+<body> 
+  <header> 
+    <button id="toggle-nav-btn" aria-expanded="false" aria-label="menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button> 
+     <div class="header-container">
+      <a href="images/B&B Logo.pdf#page=1" target="_blank"></a>
+      <nav id="primary-nav">
+      <div class="inner">
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+       </ul>
+      </div>
+        </nav>
+      </div>
+  </header> 
+  <div id="Header"> 
+    <div id="Header-Content"> 
+      <h1 style=>Our Menu</h1>
+    </div>
+   </div> 
+
+   <div id="Introduction"> 
+    <h2>Grab Something Good</h2>
+    <p style="font-size: 20px;"> Have our home made food and natural drinks on our menu. See what is tasty to you.
+   </p>
+   </div> 
+
+    <div class="container"> 
+      <div id="Coffee">
+       <h2>Coffee</h2>
+       <p>
+         Espresso - $2.50 <br>
+         Americano - $3.00 <br>
+         Latte - $4.00 <br>
+         Cappuccino - $4.00 <br>
+         Mocha - $4.50 <br>
+         Macchiato - $4.50 <br>
+         Flat White - $4.50 <br>
+         Iced Coffee - $4.00 <br>
+         Cold Brew - $4.50 <br>
+         Frappuccino - $5.00 <br>
+         Hot Chocolate - $3.50 <br>
+         Chai Tea Latte - $4.50 <br>
+         Matcha Latte - $4.50 <br>
+       </p> 
+      </div>
+      <div id="Tea/Other Drinks">
+       <h2>Tea/Other Drinks</h2>
+       <p>  
+         Herbal Tea <br>
+         Iced Tea  <br>
+         Smoothie  <br>
+         Green Tea <br>
+         Jasmine Tea <br>
+         Chamomile Tea <br>
+         Peppermint Tea <br>
+          Rooibos Tea <br>
+          Matcha Tea <br>
+          Oolong Tea <br>
+          White Tea <br>
+         Herbal Blend (e.g., hibiscus, ginger, lemongrass) <br> 
+         Chai Tea <br>
+         Darjeeling Tea <br>
+         Assam Tea <br>
+         Sencha Tea <br>
+         Genmaicha Tea <br>
+         Pu-erh Tea <br>
+         Lemon Verbena Tea <br>
+         Mint Tea <br>
+         Berry Infusion (e.g., raspberry, strawberry) 
+         - $3.50
+    </p> 
+        </div>
+      <div id="Food">
+       <h2>Food</h2>
+       <p>  
+         Croissant - $2.50 <br>
+         Bagel - $3.00 <br>
+         Muffin - $2.50 <br>
+         Scone - $3.00 <br>
+         Sandwich (e.g., ham and cheese, turkey and avocado) - $6.00 <br>
+         Salad (e.g., chicken Caesar, Greek) - $7.50 <br>
+         Quiche - $5.50 <br>
+         Soup of the Day - $4.50 <br>
+         Fruit Parfait - $4.50 <br>
+         Earl Grey - $4.00 <br>
+         English Breakfast - $5.50 <br>
+       </p> 
+       </a>
+      </div>
+   </div> 
+
+    <div id="Hours">
+    <p style="font-size: 20px;"> Our Hours: Mon - Fri 8am - 11pm | Sat - Sun 9am - 10pm
+    </p>
+   </div>
+
+</body> 
+<script> 
+
+      window.onload = () => {
+       
+        const toggleNavBtn = document.getElementById("toggle-nav-btn");
+        toggleNavBtn.innerHTML = "&#9776;";
+
+        
+        toggleNavBtn.addEventListener("click", () => {
+        
+          document.body.classList.toggle("nav-open");
+          toggleNavBtn.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "&#9776;";
+        });
+      };
+</script>
+</html>
