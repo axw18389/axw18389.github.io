@@ -2,8 +2,11 @@ body {
         margin: 0;
         padding: 0; 
         background-color:blanchedalmond 
-      } 
+      }  
 
+main {
+  padding: 1em;
+}
       #toggle-nav-btn {
         display: none;
         position: absolute;
@@ -17,21 +20,31 @@ body {
         justify-content: space-between;
       }
       #primary-nav ul {
-        padding-left: 0;
+        padding-right: 0;
       }
-      #primary-nav li {
-        list-style: none;
+      #primary-nav li { 
+        list-style: none; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         display: inline-block; 
       }
       #primary-nav a {
         background-color: #DAA785;
-        display: block;
-        padding: 1em;
+        display: block; 
+        padding: 8px;
       } 
       nav a:hover {  
         front-weight: bold 
         transition color 00.5s ease; 
        } 
+
+       a{ 
+        color: inherit;
+        text-decoration: none;
+       } 
+
+       a:hover { 
+        color: azure;
+       }
 
        .header-container{ 
         max-width: 1440px;
@@ -54,18 +67,31 @@ body {
         }
         #toggle-nav-btn {
           display: block; 
+          background:#ff5900;
+           color: #fff;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 4px;
+          cursor: pointer;
         }
       }
      img { 
      display: block; 
      margin-left: auto;
      margin-right: auto;
+     } 
 
+     .Logo-container{ 
+       display: flex;
+        gap: 20px;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 20px;
      } 
 
      #Header { 
-      height: 600px; 
-      background-color: #ffb787;
+      height: 600px;
+        background-image: url(images/Coffee-Travel.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -75,6 +101,7 @@ body {
      } 
 
      #Header-Content{ 
+        background-color: rgba(255, 255, 255, 0.8);
         text-align: center;
         width: 50%;
         min-width: 400px;
@@ -94,12 +121,11 @@ body {
      } 
 
      .container { 
-      display: flex;
-      flex-direction: row;
+      display: flex; 
+      flex-wrap: wrap;
+      justify-content: center; 
       align-items: center;
-      gap: 1rem;
-      max-width: 800px;
-      margin: auto;
+      gap: 20px;
      } 
 
      .text-content {
@@ -118,34 +144,55 @@ body {
      }  
 
 
-          .nav-btn { 
+      .nav-btn { 
       display: flex;
       justify-content: center; 
       gap: 16px;               
       width: 100%; 
     } 
 
-    #Submit{ 
-      background-color: #EF8C57; 
-      color: white;              
-      border: none;              
-      padding: 12px 24px;        
-      font-size: 16px;
-      font-weight: 600;
-      border-radius: 8px;        
-      cursor: pointer;           
-      transition: 0.2s ease, 0.1s ease;
-    }
-    
-    #Submit:hover {
-      background-color: #ff5900; 
-    }
-    
-    #Submit:active {
-      transform: scale(0.98);
-    } 
+  .contact-section {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 
-     p { 
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #DAA785;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff5900;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #ff5900;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #ff5900;
+}
+    
+
+
+p { 
      display: flex; 
      justify-content: center; 
      align-items: center; 

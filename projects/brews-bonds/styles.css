@@ -2,8 +2,11 @@ body {
         margin: 0;
         padding: 0; 
         background-color:blanchedalmond 
-      } 
+      }  
 
+main {
+  padding: 1em;
+}
       #toggle-nav-btn {
         display: none;
         position: absolute;
@@ -17,21 +20,31 @@ body {
         justify-content: space-between;
       }
       #primary-nav ul {
-        padding-left: 0;
+        padding-right: 0;
       }
-      #primary-nav li {
-        list-style: none;
+      #primary-nav li { 
+        list-style: none; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         display: inline-block; 
       }
       #primary-nav a {
         background-color: #DAA785;
-        display: block;
-        padding: 1em;
+        display: block; 
+        padding: 8px;
       } 
       nav a:hover {  
         front-weight: bold 
         transition color 00.5s ease; 
        } 
+
+       a{ 
+        color: inherit;
+        text-decoration: none;
+       } 
+
+       a:hover { 
+        color: azure;
+       }
 
        .header-container{ 
         max-width: 1440px;
@@ -54,13 +67,26 @@ body {
         }
         #toggle-nav-btn {
           display: block; 
+          background:#ff5900;
+           color: #fff;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 4px;
+          cursor: pointer;
         }
       }
      img { 
      display: block; 
      margin-left: auto;
      margin-right: auto;
+     } 
 
+     .Logo-container{ 
+       display: flex;
+        gap: 20px;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 20px;
      } 
 
      #Header { 
@@ -99,7 +125,7 @@ body {
       flex-wrap: wrap;
       justify-content: center; 
       align-items: center;
-      gap: 16px;
+      gap: 20px;
      } 
 
      #Menu{ 
@@ -117,13 +143,17 @@ body {
 
      h1{ 
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-between; 
       text-align: center;
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 60px;
       position: center; 
       margin-bottom: 60px;
      } 
+
+     h2{ 
+      margin-left: 15px;
+     }
 
 
      .nav-btn { 
@@ -152,6 +182,8 @@ body {
     .Menu-btn:active {
       transform: scale(0.98);
     } 
+
+
 
     .Events-Btn{ 
       background-color: #EF8C57; 
