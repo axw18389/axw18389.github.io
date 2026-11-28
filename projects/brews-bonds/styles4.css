@@ -14,12 +14,12 @@ main {
         top: 1em;
       } 
 
-      #primary-nav { 
+      #primary-nav {
         display: flex;
         background-color: #DAA785; 
         justify-content: space-between;
       }
-      #primary-nav ul {
+      #primary-nav ul { 
         padding-right: 0;
       }
       #primary-nav li { 
@@ -78,7 +78,9 @@ main {
      img { 
      display: block; 
      margin-left: auto;
-     margin-right: auto;
+     margin-right: auto; 
+     max-width: 100%; 
+     height: auto;
      } 
 
      .Logo-container{ 
@@ -91,7 +93,7 @@ main {
 
      #Header { 
       height: 600px;
-        background-image: url(images/Coffee\ Shop\ owners.avif);
+        background-image: url(images/Coffee\ Shop\ ownersV2.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -141,11 +143,23 @@ main {
       flex-wrap: wrap;
       justify-content: space-between;
       text-align: center;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family:Arimo, sans-serif;
       font-size: 60px;
       position: center; 
       margin-bottom: 60px;
      } 
+
+     #Footer{ 
+      align-items: center;
+      justify-content: center;
+      display:flex; 
+     } 
+
+     #Footer p { 
+      align-items: center;
+      justify-content: center;
+      display:flex;
+     }
 
 
      .nav-btn { 
@@ -156,5 +170,44 @@ main {
     } 
 
      p { 
+      padding-left: 10px; 
+      padding-inline: 1rem;
+      line-height: 1.6;
      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
-     }
+     } 
+
+     @media (max-width: 767px) {
+      .container {
+        padding-inline: 1rem;
+        gap: 1rem;
+      }
+
+      .container img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #Introduction {
+        padding-inline: 1rem;
+      }
+
+      #Header {
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      #Header-Content {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 9vw, 3rem);
+      }
+
+      #Menu,
+      #Events {
+        padding: 1rem 0;
+      }
+    }
